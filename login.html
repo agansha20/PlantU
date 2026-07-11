@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantU</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar" id="home">
+
+        <div class="logo">
+            <h2>🌿 PlantU</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#account">Account</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search Plants">
+        </div>
+    </nav>
+
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to PlantU</h1>
+
+            <p>
+                Bring Nature Home With Beautiful And Healthy Plants.
+            </p>
+
+            <button>Shop Now</button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section id="categories">
+
+        <h2>Shop By Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <img src="images/indoor plants.webp">
+                <h3>Indoor Plants</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="images/outdoor.jpg">
+                <h3>Outdoor Plants</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="images/flower.webp">
+                <h3>Flowering Plants</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="images/succulents.avif">
+                <h3>Succulents</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+
+    <section id="products">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+
+                <img src="images/moneyplant.jpg">
+
+                <h3>Money Plant</h3>
+
+                <p>₹299</p>
+
+                <button onclick="addToCart('Money Plant',299)">
+    Add To Cart
+</button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/aloevera.webp">
+
+                <h3>Aloe Vera</h3>
+
+                <p>₹199</p>
+
+                <button onclick="addToCart('Aloe Vera',199)">
+    Add To Cart
+</button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/snakeplant.jpg">
+
+                <h3>Snake Plant</h3>
+
+                <p>₹399</p>
+
+                <button onclick="addToCart('Snake Plant',399)">
+    Add To Cart
+</button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/roseplant.jpg">
+
+                <h3>Rose Plant</h3>
+
+                <p>₹249</p>
+
+                <button onclick="addToCart('Rose Plant',249)">
+    Add To Cart
+</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CART ================= -->
+
+    <section id="cart">
+
+        <h2>My Cart</h2>
+
+        <div class="cart-container">
+
+            <p>No Products Added</p>
+
+            <button>Checkout</button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ACCOUNT ================= -->
+
+    <section id="account">
+
+        <h2>My Account</h2>
+
+        <div class="account-container">
+
+    <h3>Username</h3>
+
+    <p id="usernameDisplay"></p>
+
+    <h3>Email</h3>
+
+    <p id="emailDisplay">Not Available</p>
+
+   <button onclick="editProfile()">Edit Profile</button>
+
+    <button onclick="logout()">Logout</button>
+
+</div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2>About PlantU</h2>
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <img src="images/bgimage1.jpg">
+
+            </div>
+
+            <div class="about-content">
+
+                <h3>Who We Are</h3>
+
+                <p>
+
+                    PlantU is an online plant shopping website where you can
+                    explore indoor plants, outdoor plants, flowering plants,
+                    and gardening essentials.
+
+                    We provide fresh, healthy, and affordable plants delivered
+                    directly to your doorstep.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>🌿 PlantU</h2>
+
+        <p>Email : plantu@gmail.com</p>
+
+        <p>Phone : +91 9876543210</p>
+
+        <p>© 2026 PlantU. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
